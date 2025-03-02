@@ -28,6 +28,6 @@ use App\Http\Controllers\ItemController;
 
 
 //お客さん(ユーザー)が家の玄関(/)に入ると、
-// 受付の人(Route::get())が【どこに案内すれば良いかな？】と考えて、
+// 受付の人(Route::get())が【どこに案内すれば良い？】と考えて、
 // リビング(ItemControllerのindex)に案内する
 Route::get('/', [ItemController::class, 'index']);
