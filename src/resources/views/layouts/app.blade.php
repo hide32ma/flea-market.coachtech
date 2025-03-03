@@ -13,7 +13,7 @@
     <!-- common.css呼び出し -->
     <link rel="stylesheet" href="{{ asset('css/common.css') }}" />
 
-    <!-- ページによって呼び出すcssが違う -->
+    <!-- ページによって呼び出すcssは違います -->
     @yield('css')
 
 </head>

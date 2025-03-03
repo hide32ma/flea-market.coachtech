@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
 @endsection
 
+
 @section('link')
 <!-- ヘッダーのリンクを記述する -->
 
@@ -16,9 +17,19 @@
 </form>
 
 <!-- ヘッダーナビリンク -->
-
-
-
+<nav class="header-nav">
+    <ul class="header-links">
+        <li class="header-nav-login">
+            <a href="" class="header-link-login">ログイン</a>
+        </li>
+        <li class="header-nav-mypage">
+            <a href="" class="header-link-mypage">マイページ</a>
+        </li>
+        <li class="header-nav-listing">
+            <a href="" class="header-link-listing">出品</a>
+        </li>
+    </ul>
+</nav>
 @endsection
 
 
