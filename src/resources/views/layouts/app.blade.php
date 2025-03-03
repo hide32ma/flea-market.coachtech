@@ -13,6 +13,7 @@
     <!-- common.css呼び出し -->
     <link rel="stylesheet" href="{{ asset('css/common.css') }}" />
 
+    <!-- ページによって呼び出すcssが違う -->
     @yield('css')
 
 </head>
@@ -24,7 +25,7 @@
                 <img src="{{ asset('img/logo.svg') }}" alt="">
             </h1>
 
-            <!-- ページによっては使用する -->
+            <!-- ページによっては使用する 又は使用しない -->
             @yield('link')
 
         </header>
@@ -39,6 +40,7 @@
 
 <main>
 
+    <!-- メインコンテンツ -->
     @yield('content')
 
 
