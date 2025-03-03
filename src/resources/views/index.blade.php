@@ -6,9 +6,17 @@
 <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
 @endsection
 
-
 @section('link')
 <!-- ヘッダーのリンクを記述する -->
+
+<!-- 検索フォーム -->
+<form class="header-search">
+    @csrf
+    <input type="text" name="query" placeholder="何をお探しですか？" class="search-input" required>
+</form>
+
+<!-- ヘッダーナビリンク -->
+
 
 
 @endsection
