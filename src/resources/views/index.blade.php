@@ -19,18 +19,28 @@
 <!-- ヘッダーナビリンク -->
 <nav class="header-nav">
     <ul class="header-links">
-        <li class="header-nav-login">
-            <a href="" class="header-link-login">ログイン</a>
+        <li class="header-nav_login">
+            <a href="" class="header-link_login">ログイン</a>
         </li>
-        <li class="header-nav-mypage">
-            <a href="" class="header-link-mypage">マイページ</a>
+        <li class="header-nav_mypage">
+            <a href="" class="header-link_mypage">マイページ</a>
         </li>
-        <li class="header-nav-listing">
-            <a href="" class="header-link-listing">出品</a>
+        <li class="header-nav_listing">
+            <a href="" class="header-link_listing">出品</a>
         </li>
     </ul>
 </nav>
 @endsection
+
+<!-- tabメニュー -->
+<div class="tab-menu">
+    <div class="tab-menu_active">
+        <a href="" class="active-button">おすすめ</a>
+    </div>
+    <div class="tab-menu_my-list">
+        <a href="" class="my-list_button">マイページ</a>
+    </div>
+</div>
 
 
 @section('content-title')
