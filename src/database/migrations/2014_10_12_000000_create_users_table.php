@@ -16,10 +16,18 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+
+            // uniqueとは同じメールアドレスの重複登録を防ぐ
             $table->string('email')->unique();
+
+            // メールアドレスが認証された日時を保存
             $table->timestamp('email_verified_at')->nullable();
+
             $table->string('password');
+
+            // ログイン状態を保持する機能
             $table->rememberToken();
+
             $table->timestamps();
         });
     }
