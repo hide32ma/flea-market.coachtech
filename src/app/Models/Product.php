@@ -20,14 +20,14 @@ class Product extends Model
         'user_id',
     ];
 
-    // categoryとのリレーション
+    // Category.php(categoriesテーブル)とのリレーション
     public function category()
     {
         return $this->belongsTo(Category::class);
     }
 
 
-    // Userとのリレーション
+    // User.php(usersテーブル)とのリレーション
     public function user()
     {
         return $this->belongsTo(User::class);

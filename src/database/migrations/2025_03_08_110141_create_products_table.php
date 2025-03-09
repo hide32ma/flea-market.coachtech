@@ -21,17 +21,19 @@ class CreateProductsTable extends Migration
             $table->enum('condition', ['良好', '目立った傷や汚れなし', 'やや傷や汚れあり', '状態が悪い']);
 
             $table->string('name');
-            $table->string('brand_name')->nullable;
-            $table->text('explantion')->nullable;
+
+            $table->string('brand_name')->nullable();
+
+            $table->text('explantion')->nullable();
 
             // decimal 金額や価格ならdecimalを使用する
             $table->decimal('price', 10, 2);
 
             // categoriesテーブルと繋がる
-            $table->foreignId('category_id')->constrained()->onDelete('cascade');
+            $table->foreignId('category_id')->nullable()->constrained()->onDelete('cascade');
 
             // usersテーブルと繋がる
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade');
 
             $table->timestamps();
         });
