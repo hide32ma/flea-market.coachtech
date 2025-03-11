@@ -52,6 +52,15 @@
 
 @section('content')
 <!-- コンテンツを記述する -->
-
+<div class="product-container">
+    @foreach ($products as $product)
+        <div class="product-item">
+            <img src="{{ $product->image }}" alt="COACHTECH" class="product-image" width="290" height="290">
+            <div class="product-name">
+            {{ $product->name }}
+            </div>
+        </div>
+    @endforeach
+</div>
 
 @endsection

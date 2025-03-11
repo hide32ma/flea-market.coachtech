@@ -4,11 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// Productモデルを使用
+use App\Models\Product;
+
+
 class ItemController extends Controller
 {
     // indexという画面(view)を表示します
     public function index()
     {
-        return view('index');
+        // Productモデルを使用してProductsテーブルの全てのデーてを取得
+        $products = Product::all();
+
+
+        return view('index', compact('products'));
     }
 }

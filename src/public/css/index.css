@@ -111,6 +111,8 @@
 }
 /* ここまでが @section('link') */
 
+
+
 .tab-menu {
     position: absolute;
     top: 127px;
@@ -159,4 +161,28 @@
     letter-spacing: 0%;
     color: #5F5F5F;
     text-decoration: none;
+}
+
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1374.52px;
+    height: 320px;
+    position: absolute;
+    top: 250.39px;
+    left: 69px;
+    gap: 70px;
+}
+
+.product-name {
+    width: 290px;
+    height: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30.26px;
+    letter-spacing: 0%;
+    color: #000000;
 }
