@@ -16,7 +16,14 @@ class ItemController extends Controller
         // Productモデルを使用してProductsテーブルの全てのデーてを取得
         $products = Product::all();
 
-
+        // $productsをviewに渡す
         return view('index', compact('products'));
+    }
+
+
+    public function show($id)
+    {
+        $product = Product::findOrFail($id);
+        return view('show', compact('product'));
     }
 }

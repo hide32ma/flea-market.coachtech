@@ -31,3 +31,6 @@ use App\Http\Controllers\ItemController;
 // 受付の人(Route::get())が【どこに案内すれば良い？】と考えて、
 // リビング(ItemControllerのindex)に案内する
 Route::get('/', [ItemController::class, 'index']);
+
+
+Route::get('/item/:{id}', [ItemController::class, 'show'])->name('show');

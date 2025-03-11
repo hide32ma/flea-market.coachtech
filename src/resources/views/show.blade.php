@@ -3,7 +3,7 @@
 
 @section('css')
 <!-- このページで使用するcssを呼び出し -->
-<link rel="stylesheet" href="{{ asset('css/index.css') }}" />
+<link rel="stylesheet" href="{{ asset('css/show.css') }}" />
 @endsection
 
 
@@ -32,36 +32,15 @@
 </nav>
 @endsection
 
-<!-- tabメニュー -->
-<div class="tab-menu">
-    <div class="tab-menu_active">
-        <a href="" class="active-button">おすすめ</a>
-    </div>
-    <div class="tab-menu_my-list">
-        <a href="" class="my-list_button">マイページ</a>
-    </div>
-</div>
-
-
 @section('content-title')
 <!-- h2タグを記述する -->
 
 
 @endsection
 
-
 @section('content')
 <!-- コンテンツを記述する -->
-<div class="product-container">
-    @foreach ($products as $product)
-        <div class="product-item">
-            <a href="{{ route('show', $product->id) }}" class="product-button">
-            <img src="{{ $product->image }}" alt="COACHTECH" class="product-image" width="290" height="290">
-            <div class="product-name">
-            {{ $product->name }}
-            </div>
-        </div>
-    @endforeach
-</div>
+
+<h1>{{ $product->name }}</h1>
 
 @endsection
