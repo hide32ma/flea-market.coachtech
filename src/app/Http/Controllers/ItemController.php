@@ -26,4 +26,6 @@ class ItemController extends Controller
         $product = Product::findOrFail($id);
         return view('show', compact('product'));
     }
+
+
 }

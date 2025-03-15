@@ -323,6 +323,8 @@
     width: 410px;
     height: 30px;
     border-radius: 15px;
+    
+
 }
 
 .category-tab {
@@ -342,8 +344,9 @@
 .product-condition {
     position: absolute;
     top: 130px;
-    width: 259.76px;
+    width: 570px;
     height: 100px;
+    display: flex;
 }
 
 .condition-tab {
@@ -365,7 +368,7 @@
 .product-condition_date {
     position: absolute;
     left: 214px;
-    width: 45.76px;
+    width: 300px;
     height: 82.76px;
 }
 
@@ -497,13 +500,13 @@
 
 .comment-submit_button-name {
     font-family: 'Inter', sans-serif;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        color: #FFFFFF;
-        position: absolute;
-        top: 50%;
-        right: 30%;
-        transform: translateY(-50%);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translateY(-50%);
 }

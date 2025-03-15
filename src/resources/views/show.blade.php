@@ -106,6 +106,9 @@
             <div class="product-category">
                 <div class="category-tab">
                     <div class="product-category_name">カテゴリー</div>
+                    <div class="product-category_date">
+                        
+                    </div>
                 </div>
             </div>
 
@@ -113,7 +116,9 @@
                 <div class="condition-tab">
                     <div class="product-condition_name">商品の状態</div>
                     <div class="product-condition_date">
-                        <div class="product-condition_date_name">良好</div>
+                        <div class="product-condition_date_name">
+                            {{ $product->condition }}
+                        </div>
                     </duv>
                 </div>
             </div>

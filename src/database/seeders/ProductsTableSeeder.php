@@ -20,6 +20,7 @@ class ProductsTableSeeder extends Seeder
         DB::table('products')->insert([
             [
                 'name' => '腕時計',
+                'brand_name' => 'ROLEX',
                 'price' => 15000,
                 'category_id' => null,
                 'user_id' => null,
@@ -32,6 +33,7 @@ class ProductsTableSeeder extends Seeder
 
             [
                 'name' => 'HDD',
+                'brand_name' => 'SONY',
                 'price' => 5000,
                 'category_id' => null,
                 'user_id' => null,
@@ -44,6 +46,7 @@ class ProductsTableSeeder extends Seeder
 
             [
                 'name' => '玉ねぎ3束',
+                'brand_name' => '埼玉県産',
                 'price' => 300,
                 'category_id' => null,
                 'user_id' => null,
@@ -56,6 +59,7 @@ class ProductsTableSeeder extends Seeder
 
             [
                 'name' => '革靴',
+                'brand_name' => 'NIKE',
                 'price' => 4000,
                 'category_id' => null,
                 'user_id' => null,
@@ -68,6 +72,7 @@ class ProductsTableSeeder extends Seeder
 
             [
                 'name' => 'ノートPC',
+                'brand_name' => 'MacBook',
                 'price' => 45000,
                 'category_id' => null,
                 'user_id' => null,
@@ -80,6 +85,7 @@ class ProductsTableSeeder extends Seeder
 
             [
                 'name' => 'マイク',
+                'brand_name' => 'Panasonic',
                 'price' => 8000,
                 'category_id' => null,
                 'user_id' => null,
@@ -92,6 +98,7 @@ class ProductsTableSeeder extends Seeder
 
             [
                 'name' => 'ショルダーバッグ',
+                'brand_name' => 'PUMA',
                 'price' => 3500,
                 'category_id' => null,
                 'user_id' => null,
@@ -105,6 +112,7 @@ class ProductsTableSeeder extends Seeder
 
             [
                 'name' => 'タンブラー',
+                'brand_name' => 'THERMOS',
                 'price' => 500,
                 'category_id' => null,
                 'user_id' => null,
@@ -117,6 +125,7 @@ class ProductsTableSeeder extends Seeder
 
             [
                 'name' => 'コーヒーミル',
+                'brand_name' => 'Canon',
                 'price' => 4000,
                 'category_id' => null,
                 'user_id' => null,
@@ -129,6 +138,7 @@ class ProductsTableSeeder extends Seeder
 
             [
                 'name' => 'メイクセット',
+                'brand_name' => 'APE',
                 'price' => 2500,
                 'category_id' => null,
                 'user_id' => null,

@@ -17,5 +17,7 @@ class DatabaseSeeder extends Seeder
 
         // シーダーファイルの登録
         $this->call(ProductsTableSeeder::class);
+
+        $this->call(CategoriesTableSeeder::class);
     }
 }
