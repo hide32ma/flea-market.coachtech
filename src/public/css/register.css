@@ -1,0 +1,189 @@
+.auth-register_content {
+    position: absolute;
+    top: 178px;
+    left: 416px;
+    width: 680px;
+    height: 678px;
+}
+
+.auth-register_top {
+    position: absolute;
+    left: 257px;
+    width: 144px;
+    height: 47.58px;
+}
+
+.auth-register_top-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.auth-register_user-name {
+    position: absolute;
+    top: 102px;
+    width: 680px;
+    height: 35px;
+}
+
+.user-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.input_user-name {
+    font-size: 24px;
+    position: absolute;
+    top: 35px;
+    width: 680px;
+    height: 59px;
+    border: 1px solid #5F5F5F;
+    border-radius: 4px;
+}
+
+.auth-register_mail-address {
+    position: absolute;
+    top: 234px;
+    width: 680px;
+    height: 36px;
+}
+
+.mail-address {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.input_mail-address {
+    font-size: 24px;
+    position: absolute;
+    top: 35px;
+    width: 680px;
+    height: 58px;
+    border: 1px solid #5F5F5F;
+    border-radius: 4px;
+}
+
+.auth-register_login-password {
+    position: absolute;
+    top: 368px;
+    width: 680px;
+    height: 35px;
+}
+
+.login-password {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.input_login-password {
+    font-size: 24px;
+    position: absolute;
+    top: 35px;
+    width: 680px;
+    height: 59px;
+    border: 1px solid #5F5F5F;
+    border-radius: 4px;
+}
+
+.auth-register_confirmation-password {
+    position: absolute;
+    top: 500px;
+    width: 680px;
+    height: 36px;
+}
+
+.confirmation-password {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+}
+
+.input_confirmation-password {
+    font-size: 24px;
+    position: absolute;
+    top: 35px;
+    width: 680px;
+    height: 58px;
+    border: 1px solid #5F5F5F;
+    border-radius: 4px;
+}
+
+.auth-registration {
+    position: absolute;
+    top: 888px;
+    left: 417px;
+    width: 680px;
+    height: 65.25px;
+    background-color: #FF5555;
+    border-radius: 5px;
+}
+
+.registration-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: absolute;
+    right: 50%;
+    top: 25%;
+    transform: translateX(50%);
+    color: #FFFFFF;
+    border: none;
+    background-color: #FF5555;
+}
+
+.login-page_migration {
+    position: absolute;
+    top: 971.74px;
+    left: 635px;
+    width: 257px;
+    height: 53.29px;
+}
+
+.input-migration {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: absolute;
+    right: 50%;
+    top: 25%;
+    transform: translateX(50%);
+    white-space: nowrap;
+    text-decoration: none;
+}

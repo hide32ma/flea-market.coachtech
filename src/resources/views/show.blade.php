@@ -107,7 +107,7 @@
                 <div class="category-tab">
                     <div class="product-category_name">カテゴリー</div>
                     <div class="product-category_date">
-                        
+
                     </div>
                 </div>
             </div>
@@ -159,7 +159,7 @@
         <div class="comment-submit">
             <div class="comment-submit_button">
                 <div class="comment-submit_button-name">コメントを送信する</div>
-                
+
             </div>
         </div>
 
