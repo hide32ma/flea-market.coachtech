@@ -33,14 +33,19 @@ use App\Http\Controllers\AuthController;
 // 受付の人(Route::get())が【どこに案内すれば良い？】と考えて、
 // リビング(ItemControllerのindex)に案内する
 
-Route::get('/', [ItemController::class, 'index']);
 
-Route::get('/item/:{id}', [ItemController::class, 'show'])->name('show');
-
-
-Route::get('/login', [AuthController::class, 'login']);
+    Route::get('/', [ItemController::class, 'index']);
 
 
+    // ログインされていないと/loginにリダイレクト
+    // 認証済みユーザーのみ/aにアクセスできる
+    // その時ItemControllerのindexメソッドが実行される
+    Route::middleware('auth')->group(function() {
+        Route::get('/a', [ItemController::class, 'index']);
+    });
 
-Route::get('/register', [AuthController::class, 'register']);
+    Route::get('/item/:{id}', [ItemController::class, 'show'])->name('show');
+
+   
+
 

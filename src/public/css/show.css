@@ -45,47 +45,47 @@
     margin: 0;
 }
 
-.header-nav_login {
-    position: absolute;
-    top: 20px;
-    left: 37px;
-    width: 135px;
-    height: 47px;
-}
+/* .header-nav_login { */
+    /* position: absolute; */
+    /* top: 20px; */
+    /* left: 37px; */
+    /* width: 135px; */
+    /* height: 47px; */
+/* } */
 
-.header-link_login {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29.05px;
-    letter-spacing: 0%;
-    color: #FFFFFF;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-}
+/* .header-link_login { */
+    /* display: block; */
+    /* font-family: 'Inter', sans-serif; */
+    /* font-weight: 400; */
+    /* font-size: 24px; */
+    /* line-height: 29.05px; */
+    /* letter-spacing: 0%; */
+    /* color: #FFFFFF; */
+    /* text-align: center; */
+    /* text-decoration: none; */
+    /* padding: 10px; */
+/* } */
 
-.header-nav_mypage {
-    position: absolute;
-    top: 20px;
-    left: 181px;
-    width: 135px;
-    height: 47px;
-}
+/* .header-nav_mypage { */
+    /* position: absolute; */
+    /* top: 20px; */
+    /* left: 181px; */
+    /* width: 135px; */
+    /* height: 47px; */
+/* } */
 
-.header-link_mypage {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29.05px;
-    letter-spacing: 0%;
-    color: #FFFFFF;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-}
+/* .header-link_mypage { */
+    /* display: block; */
+    /* font-family: 'Inter', sans-serif; */
+    /* font-weight: 400; */
+    /* font-size: 24px; */
+    /* line-height: 29.05px; */
+    /* letter-spacing: 0%; */
+    /* color: #FFFFFF; */
+    /* text-align: center; */
+    /* text-decoration: none; */
+    /* padding-top: 10px; */
+/* } */
 
 .header-nav_listing {
     position: absolute;

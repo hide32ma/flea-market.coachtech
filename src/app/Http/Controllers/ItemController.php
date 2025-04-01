@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 // Productモデルを使用
 use App\Models\Product;
 
+// Userモデルを使用
+use App\Models\User;
+
 
 class ItemController extends Controller
 {

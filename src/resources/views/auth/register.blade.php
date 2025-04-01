@@ -25,6 +25,16 @@
         </div>
     </div>
 
+
+    <!-- バリデーションエラー表示 -->
+     @if ($errors->any())
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li style="color:red">{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
+    
     <!-- フォーム -->
     <form class="form" action="/register" method="post">
 
@@ -70,7 +80,7 @@
     <!-- フォーム終了 -->
 
 <div class="login-page_migration">
-    <a href="" class="input-migration">
+    <a href="/login" class="input-migration">
         ログインはこちら
     </a>
 </div>

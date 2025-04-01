@@ -28,6 +28,9 @@
             <!-- ページによっては使用する 又は使用しない -->
             @yield('link')
 
+            @yield('nav')
+
+
         </header>
 
         <div class="content-title">

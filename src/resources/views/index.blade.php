@@ -19,12 +19,38 @@
 <!-- ヘッダーナビリンク -->
 <nav class="header-nav">
     <ul class="header-links">
-        <li class="header-nav_login">
-            <a href="" class="header-link_login">ログイン</a>
-        </li>
-        <li class="header-nav_mypage">
-            <a href="" class="header-link_mypage">マイページ</a>
-        </li>
+
+    @section('nav')
+        <!-- ログイン状態時に表示される -->
+                @auth
+                <li class="header-nav_mypage">
+                    <a class="header-link_mypage" href="">マイページ</a>
+                </li>
+        <!-- ログアウト機能 -->
+                <li class="header-nav_logout">
+                    <form class="form-logout" action="/logout" method="post">
+                @csrf
+                    <button type="submit" class="header-nav_logout-button">ログアウト</button>
+                    </form>
+                </li>
+                @endauth
+
+        <!-- ログアウト時に表示される -->
+                @guest
+                <li class="header-nav_mypage">
+                    <a class="header-link_mypage" href="">マイページ</a>
+                </li>
+        <!-- ログイン機能 -->
+                <li class="header-nav_logout">
+                    <form class="form-logout" action="/login" method="post">
+                @csrf
+                    <a href="/login" class="header-nav_logout-button">ログイン</a>
+                    </form>
+                </li>
+                @endguest
+
+    @endsection
+
         <li class="header-nav_listing">
             <a href="" class="header-link_listing">出品</a>
         </li>

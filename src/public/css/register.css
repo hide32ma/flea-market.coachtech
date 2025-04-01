@@ -164,6 +164,7 @@
     color: #FFFFFF;
     border: none;
     background-color: #FF5555;
+    cursor: pointer;
 }
 
 .login-page_migration {

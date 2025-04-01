@@ -25,6 +25,15 @@
         </div>
     </div>
 
+<!-- バリデーションエラー表示 -->
+    @if ($errors->any())
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li style="color:red">{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
+
     <!-- フォーム -->
     <form class="form" action="/login" method="post">
 
@@ -48,7 +57,7 @@
 
 
     <div class="auth-registration">
-        <button class="registration-button">
+        <button type="submit" class="registration-button">
             ログインする
         </button>
     </div>
@@ -58,7 +67,7 @@
     <!-- フォーム終了 -->
 
     <div class="member-registration-page_migration">
-        <a href="" class="input-migration">
+        <a href="/register" class="input-migration">
             会員登録はこちら
         </a>
     </div>

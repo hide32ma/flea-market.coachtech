@@ -37,3 +37,52 @@ body {
 }
 
 
+.header-nav_mypage {
+    position: absolute;
+    left: 1230px;
+    width: 135px;
+    height: 47px;
+}
+
+.header-link_mypage {
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: absolute;
+    right: 50%;
+    top: 25%;
+    transform: translateX(50%);
+}
+
+.header-nav_logout {
+    position: absolute;
+    left: 1090px;
+    width: 135px;
+    height: 47px;
+}
+
+.header-nav_logout-button {
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    border: none;
+    position: absolute;
+    right: 50%;
+    top: 25%;
+    transform: translateX(50%);
+    background-color: #000000;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
