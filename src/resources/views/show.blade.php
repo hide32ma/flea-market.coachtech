@@ -42,7 +42,7 @@
                 <li class="header-nav_logout">
                     <form class="form-logout" action="/login" method="post">
                 @csrf
-                    <button type="submit" class="header-nav_logout-button">ログイン</button>
+                    <a href="/login" class="header-nav_logout-button">ログイン</a>
                     </form>
                 </li>
                 @endguest
@@ -91,11 +91,29 @@
                     ¥{{ number_format($product->price) }}(税込)
                 </div>
             </div>
+
             <!-- お気に入りとコメント数 -->
+            
             <div class="product-likes_comments">
                 <div class="item-likes">
-                    <img src="{{ asset('img/') }}" alt="星">
-                </div>
+                    
+                    @auth
+                    @if (Auth::user()->likedProducts->contains($product->id))
+                    <!-- いいね済み：解除ボタン -->
+                     <form method="POST" action="{{ route('like.destroy', $product->id) }}">
+                        @csrf
+                        @method('DELETE')
+                    <button type="submit">解除</button>
+                    </form>
+
+                @else
+                    <!-- いいねしてない：追加ボタン -->
+                     <form method="POST" action="{{ route('like.store', $product->id) }}">
+                        @csrf
+                    <button type="submit">いいね</button>
+                    </form>
+                    @endif
+                @endauth
 
                 <div class="item-comments">
                     <img src="{{ asset('img/') }}" alt="コ">

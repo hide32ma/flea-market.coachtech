@@ -16,6 +16,8 @@
 
 @endsection
 
+
+
 @section('content')
 <!-- コンテンツを記述する -->
 <div class="auth-login_content">
@@ -26,8 +28,8 @@
     </div>
 
 <!-- バリデーションエラー表示 -->
-    @if ($errors->any())
-        <ul>
+   @if ($errors->any())
+        <ul class="error-message">
             @foreach ($errors->all() as $error)
                 <li style="color:red">{{ $error }}</li>
             @endforeach

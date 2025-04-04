@@ -101,11 +101,40 @@
     text-decoration: none;
 }
 
+.active_button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 0%;
+    color: #5F5F5F;
+    text-decoration: none;
+}
+
 .tab-menu_my-list {
     position: absolute;
     left: 336px;
     width: 155px;
     height: 40px;
+}
+
+.my-list-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 0%;
+    color: #FF0000;
+    text-decoration: none;
+
 }
 
 .my-list_button {

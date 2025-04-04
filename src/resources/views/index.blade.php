@@ -38,7 +38,7 @@
         <!-- ログアウト時に表示される -->
                 @guest
                 <li class="header-nav_mypage">
-                    <a class="header-link_mypage" href="">マイページ</a>
+                    <a class="header-link_mypage" href="/login">マイページ</a>
                 </li>
         <!-- ログイン機能 -->
                 <li class="header-nav_logout">
@@ -59,15 +59,27 @@
 @endsection
 
 <!-- tabメニュー -->
+@auth
+<div class="tab-menu">
+    <div class="tab-menu_active">
+        <a href="" class="active_button">おすすめ</a>
+    </div>
+    <div class="tab-menu_my-list">
+        <a href="" class="my-list-button">マイページ</a>
+    </div>
+</div>
+@endauth
+
+@guest
 <div class="tab-menu">
     <div class="tab-menu_active">
         <a href="" class="active-button">おすすめ</a>
     </div>
     <div class="tab-menu_my-list">
-        <a href="" class="my-list_button">マイページ</a>
+        <a href="/login" class="my-list_button">マイページ</a>
     </div>
 </div>
-
+@endguest
 
 @section('content-title')
 <!-- h2タグを記述する -->

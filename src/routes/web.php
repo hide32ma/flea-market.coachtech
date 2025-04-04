@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 // AuthControllerを使います
 use App\Http\Controllers\AuthController;
+// LikeControllerを使います
+use App\Http\Controllers\LikeController;
 
 
 
@@ -37,6 +39,12 @@ use App\Http\Controllers\AuthController;
     Route::get('/', [ItemController::class, 'index']);
 
 
+    Route::middleware(['auth'])->group(function () {
+        Route::post('/like/{product}', [LikeController::class, 'store'])->name('like.store');
+        Route::delete('/like/{product}', [LikeController::class, 'destroy'])->name('like.destroy');
+    });
+
+
     // ログインされていないと/loginにリダイレクト
     // 認証済みユーザーのみ/aにアクセスできる
     // その時ItemControllerのindexメソッドが実行される
@@ -46,6 +54,6 @@ use App\Http\Controllers\AuthController;
 
     Route::get('/item/:{id}', [ItemController::class, 'show'])->name('show');
 
-   
+
 
 

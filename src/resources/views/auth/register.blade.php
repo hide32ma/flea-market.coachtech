@@ -28,13 +28,13 @@
 
     <!-- バリデーションエラー表示 -->
      @if ($errors->any())
-        <ul>
+        <ul class="error-message">
             @foreach ($errors->all() as $error)
                 <li style="color:red">{{ $error }}</li>
             @endforeach
         </ul>
     @endif
-    
+
     <!-- フォーム -->
     <form class="form" action="/register" method="post">
 

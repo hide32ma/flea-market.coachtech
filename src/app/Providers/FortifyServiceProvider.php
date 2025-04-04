@@ -13,6 +13,11 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Laravel\Fortify\Fortify;
 
+use App\Http\Requests\RegisterRequest;
+use App\Http\Requests\LoginRequest;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Hash;
+
 class FortifyServiceProvider extends ServiceProvider
 {
     /**
@@ -43,6 +48,35 @@ class FortifyServiceProvider extends ServiceProvider
 
             return Limit::perMinute(10)->by($email . $request->ip());
         });
+
+        //RegisterRequest を使ったバリデーション
+        // Fortify::createUsersUsing(function (array $input) {
+        // $request = new \App\Http\Requests\RegisterRequest();
+        // $request->merge($input);
+        // $request->validateResolved();
+
+        // return \App\Models\User::create([
+            // 'name' => $input['name'],
+            // 'email' => $input['email'],
+            // 'password' => bcrypt($input['password']),
+        // ]);
+    // });
+
+        //LoginRequest を使ったバリデーション
+        // Fortify::authenticateUsing(function (Request $request) {
+        // $loginRequest = new \App\Http\Requests\LoginRequest();
+        // $loginRequest->merge($request->all());
+        // $loginRequest->validateResolved();
+
+        // $user = \App\Models\User::where('email', $request->email)->first();
+
+        // if ($user && \Hash::check($request->password, $user->password)) {
+            // return $user;
+        // }
+        // return null;
+    // });
+
+
 
         // Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         // Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
