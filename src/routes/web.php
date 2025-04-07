@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Auth;
+
+use Illuminate\Http\Request;
+
 // ItemControllerを使います
 use App\Http\Controllers\ItemController;
 // AuthControllerを使います
@@ -36,7 +40,15 @@ use App\Http\Controllers\LikeController;
 // リビング(ItemControllerのindex)に案内する
 
 
-    Route::get('/', [ItemController::class, 'index']);
+    // Route::get('/', [ItemController::class, 'index']);
+
+    Route::get('/', function (Request $request) {
+        if (Auth::check() && !$request->has('page')) {
+            return redirect('/?page=mylist');
+        }
+
+        return app(ItemController::class)->index($request);
+    });
 
 
     Route::middleware(['auth'])->group(function () {
