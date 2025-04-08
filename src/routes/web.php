@@ -72,6 +72,11 @@ use App\Http\Controllers\LikeController;
     return view('mypage');
     })->middleware(['auth'])->name('mypage');
 
+// ログインユーザーしか /sell にアクセスできなくなる。
+    Route::get('/sell', function () {
+    return view('sell');
+    })->middleware(['auth'])->name('sell');
+
 
 
 

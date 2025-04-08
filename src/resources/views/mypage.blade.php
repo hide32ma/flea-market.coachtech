@@ -52,7 +52,7 @@
     @endsection
 
         <li class="header-nav_listing">
-            <a href="" class="header-link_listing">出品</a>
+            <a href="/sell" class="header-link_listing">出品</a>
         </li>
     </ul>
 </nav>

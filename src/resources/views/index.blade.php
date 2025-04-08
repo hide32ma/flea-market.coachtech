@@ -33,6 +33,10 @@
                     <button type="submit" class="header-nav_logout-button">ログアウト</button>
                     </form>
                 </li>
+
+                <li class="header-nav_listing">
+            <a href="/sell" class="header-link_listing">出品</a>
+        </li>
                 @endauth
 
         <!-- ログアウト時に表示される -->
@@ -47,13 +51,15 @@
                     <a href="/login" class="header-nav_logout-button">ログイン</a>
                     </form>
                 </li>
+
+                <li class="header-nav_listing">
+                    <a href="/login" class="header-link_listing">出品</a>
+                </li>
                 @endguest
 
     @endsection
 
-        <li class="header-nav_listing">
-            <a href="" class="header-link_listing">出品</a>
-        </li>
+        
     </ul>
 </nav>
 @endsection
