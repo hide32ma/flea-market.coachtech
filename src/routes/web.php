@@ -67,5 +67,11 @@ use App\Http\Controllers\LikeController;
     Route::get('/item/:{id}', [ItemController::class, 'show'])->name('show');
 
 
+    // ログインユーザーしか /mypage にアクセスできなくなる。
+    Route::get('/mypage', function () {
+    return view('mypage');
+    })->middleware(['auth'])->name('mypage');
+
+
 
 

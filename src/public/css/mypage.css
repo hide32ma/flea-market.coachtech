@@ -1,0 +1,72 @@
+/* ここから @section('link') */
+.header-search {
+    position: absolute;
+    width: 563px;
+    height: 80px;
+    left: 475px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.search-input {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    left: 31px;
+    font-size: 24px;
+}
+
+.search-input::placeholder {
+    position: absolute;
+    top: 5px;
+    width: 330px;
+    height: 29px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: normal;
+    color: #000000;
+    text-align: center;
+}
+
+.header-nav {
+    position: absolute;
+    left: 1049px;
+    width: 463px;
+    height: 80px;
+}
+
+.header-links {
+    width: 463px;
+    height: 80px;
+    margin: 0;
+}
+
+
+.header-nav_listing {
+    position: absolute;
+    top: 18px;
+    left: 337px;
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.header-link_listing {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.05px;
+    letter-spacing: 0%;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* ここまでが @section('link') */
