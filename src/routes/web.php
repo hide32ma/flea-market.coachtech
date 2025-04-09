@@ -13,6 +13,11 @@ use App\Http\Controllers\AuthController;
 // LikeControllerを使います
 use App\Http\Controllers\LikeController;
 
+use App\Http\Controllers\Auth\RegisteredUserController;
+
+
+
+
 
 
 
@@ -66,6 +71,8 @@ use App\Http\Controllers\LikeController;
 
     Route::get('/item/:{id}', [ItemController::class, 'show'])->name('show');
 
+    
+
 
     // ログインユーザーしか /mypage にアクセスできなくなる。
     Route::get('/mypage', function () {
@@ -76,6 +83,19 @@ use App\Http\Controllers\LikeController;
     Route::get('/sell', function () {
     return view('sell');
     })->middleware(['auth'])->name('sell');
+
+    //  Route::get('/mypage/profile', function () {
+    //  return view('edit');
+    //  });
+
+      Route::get('/mypage/profile', function () {
+      return view('edit');
+      })->middleware(['auth'])->name('edit');
+
+      Route::post('/register', [RegisteredUserController::class, 'store'])
+     ->middleware(['guest'])
+      ->name('register');
+
 
 
 
