@@ -24,7 +24,7 @@
         <!-- ログイン状態時に表示される -->
                 @auth
                 <li class="header-nav_mypage">
-                    <a class="header-link_mypage" href="">マイページ</a>
+                    <a class="header-link_mypage" href="/mypage">マイページ</a>
                 </li>
                 <li class="header-nav_logout">
                     <form class="form-logout" action="/logout" method="post">
@@ -97,7 +97,7 @@
             <div class="product-likes_comments">
                 <div class="item-likes">
                     
-                    @auth
+                @auth
                     @if (Auth::user()->likedProducts->contains($product->id))
                     <!-- いいね済み：解除ボタン -->
                      <form method="POST" action="{{ route('like.destroy', $product->id) }}">

@@ -6,14 +6,19 @@ use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
 
+
+
 // ItemControllerを使います
 use App\Http\Controllers\ItemController;
 // AuthControllerを使います
 use App\Http\Controllers\AuthController;
 // LikeControllerを使います
 use App\Http\Controllers\LikeController;
-
+// Auth/RegisteredUserControllerを使います
 use App\Http\Controllers\Auth\RegisteredUserController;
+// ProfileControllerを使います
+use App\Http\Controllers\ProfileController;
+
 
 
 
@@ -71,7 +76,7 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 
     Route::get('/item/:{id}', [ItemController::class, 'show'])->name('show');
 
-    
+
 
 
     // ログインユーザーしか /mypage にアクセスできなくなる。
@@ -88,13 +93,23 @@ use App\Http\Controllers\Auth\RegisteredUserController;
     //  return view('edit');
     //  });
 
-      Route::get('/mypage/profile', function () {
-      return view('edit');
-      })->middleware(['auth'])->name('edit');
+    // ログインユーザーしか  /mypage/profileにアクセスできなくなる。
+    Route::get('/mypage/profile', function () {
+    return view('edit');
+    })->middleware(['auth'])->name('edit');
 
-      Route::post('/register', [RegisteredUserController::class, 'store'])
-     ->middleware(['guest'])
-      ->name('register');
+
+
+    Route::post('/register', [RegisteredUserController::class, 'store'])
+    ->middleware(['guest'])
+    ->name('register');
+
+
+
+    Route::post('/mypage/profile', [ProfileController::class, 'store'])
+    ->middleware(['auth'])
+    ->name('profile.store');
+
 
 
 

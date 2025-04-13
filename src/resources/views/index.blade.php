@@ -105,7 +105,11 @@
             {{ $product->name }}
             </div>
         </div>
+
+        
     @endforeach
 </div>
+
+
 
 @endsection

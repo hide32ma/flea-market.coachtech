@@ -57,3 +57,10 @@
     </ul>
 </nav>
 @endsection
+
+
+@section('content')
+
+<div>商品出品画面</div>
+
+@endsection

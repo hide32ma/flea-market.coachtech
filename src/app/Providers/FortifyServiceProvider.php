@@ -53,9 +53,9 @@ class FortifyServiceProvider extends ServiceProvider
             return Limit::perMinute(10)->by($email . $request->ip());
         });
 
-        $this->app->singleton(
-            LoginResponse::class,
-            CustomLoginResponse::class
+            $this->app->singleton(
+                LoginResponse::class,
+                CustomLoginResponse::class
         );
 
 

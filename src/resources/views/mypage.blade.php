@@ -57,3 +57,14 @@
     </ul>
 </nav>
 @endsection
+
+
+@section('content')
+
+<div>プロフィール画面</div>
+
+
+
+<a href="/mypage/profile" class="">プロフィールを編集</a>
+
+@endsection
