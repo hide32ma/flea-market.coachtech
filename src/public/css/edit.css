@@ -70,3 +70,178 @@
 }
 
 /* ここまでが @section('link') */
+
+
+.profile-edit_top {
+    position: absolute;
+    top: 139px;
+    left: 606px;
+    width: 299px;
+    height: 47px;
+}
+
+.profile-edit_top-name {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    right: 50%;
+    top: 15%;
+    transform: translateX(50%);
+    white-space: nowrap;
+}
+
+.profile-edit_name {
+    position: absolute;
+    top: 459px;
+    left: 416px;
+    width: 680px;
+    height: 92px;
+}
+
+.user-name {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    vertical-align: middle;
+    width: 680px;
+    height: 36px;
+}
+
+.input_user-name {
+    position: absolute;
+    top: 37px;
+    width: 680px;
+    height: 55px;
+    border-radius: 4px;
+    border: 1px solid #5F5F5F;
+    font-size: 24px;
+}
+
+.profile-edit_zip_code {
+    position: absolute;
+    top: 613px;
+    left: 416px;
+    width: 680px;
+    height: 92px;
+}
+
+.user-zip_code {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    vertical-align: middle;
+    width: 680px;
+    height: 36px;
+}
+
+.input_user-zip_code {
+    position: absolute;
+    top: 37px;
+    width: 680px;
+    height: 55px;
+    border-radius: 4px;
+    border: 1px solid #5F5F5F;
+    font-size: 24px;
+}
+
+.profile-edit_address {
+    position: absolute;
+    top: 748px;
+    left: 416px;
+    width: 680px;
+    height: 92px;
+}
+
+.user-address {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    vertical-align: middle;
+    width: 680px;
+    height: 36px;
+}
+
+.input_user-address {
+    position: absolute;
+    top: 37px;
+    width: 680px;
+    height: 55px;
+    border-radius: 4px;
+    border: 1px solid #5F5F5F;
+    font-size: 24px;
+}
+
+.profile-edit_building_name {
+    position: absolute;
+    top: 883px;
+    left: 416px;
+    width: 680px;
+    height: 92px;
+}
+
+.user-building_name {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    vertical-align: middle;
+    width: 680px;
+    height: 36px;
+}
+
+.input_user-building_name {
+    position: absolute;
+    top: 37px;
+    width: 680px;
+    height: 55px;
+    border-radius: 4px;
+    border: 1px solid #5F5F5F;
+    font-size: 24px;
+}
+
+.profile-edit {
+    position: absolute;
+    top: 1042px;
+    left: 416px;
+    width: 680px;
+    height: 60px;
+}
+
+.profile-edit_button {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    background-color: #FF5555;
+    vertical-align: middle;
+    width: 680px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #FF5555;
+    cursor: pointer;
+}
+
+
+
