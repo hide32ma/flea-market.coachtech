@@ -11,4 +11,4 @@
 - 環境開発: http://localhost/
 - phpMyAdmin: http://localhost:8080/
 
-- 商品詳細: http:localhost/item/:1
+- 商品詳細: http://localhost/item/:1 〜 10
