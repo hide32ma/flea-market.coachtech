@@ -10,4 +10,3 @@
 ## URL
 - 環境開発: http://localhost
 - phpMyAdmin: http://localhost:8080/
-- 
