@@ -90,6 +90,13 @@
 
     @csrf
 
+
+    <div class="profile-edit_image">
+        <div class="user-image">
+            
+        </div>
+    </div>
+
     <div class="profile-edit_name">
         <div class="user-name">
             ユーザー名

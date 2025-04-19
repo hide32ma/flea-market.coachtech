@@ -116,7 +116,7 @@
                 @endauth
 
                 <div class="item-comments">
-                    <img src="{{ asset('img/') }}" alt="コ">
+                    <img src="{{ asset('img/') }}" alt="">
                     </a>
                 </div>
             </div>

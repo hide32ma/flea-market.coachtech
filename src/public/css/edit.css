@@ -243,5 +243,15 @@
     cursor: pointer;
 }
 
+.user-image{
+    position: absolute;
+    top: 233px;
+    left: 416px;
+    width: 150px;
+    height: 150px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
 
 

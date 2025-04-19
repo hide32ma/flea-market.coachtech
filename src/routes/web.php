@@ -60,6 +60,8 @@ use App\Http\Controllers\ProfileController;
         return app(ItemController::class)->index($request);
     });
 
+    
+
 
     Route::middleware(['auth'])->group(function () {
         Route::post('/like/{product}', [LikeController::class, 'store'])->name('like.store');

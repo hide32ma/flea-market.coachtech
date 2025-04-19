@@ -22,7 +22,9 @@
     <div class="app">
         <header class="header">
             <h1 class="header-heading">
-                <img src="{{ asset('img/logo.svg') }}" alt="COACHTECH">
+                <a href="/">
+                <img src="{{ asset('img/logo.svg') }}" alt="COACHTECH" >
+                </a>
             </h1>
 
             <!-- ページによっては使用する 又は使用しない -->

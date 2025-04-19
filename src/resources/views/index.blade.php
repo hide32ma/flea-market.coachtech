@@ -16,6 +16,12 @@
     <input type="text" name="query" placeholder="何をお探しですか？" class="search-input" required>
 </form>
 
+
+
+
+
+
+
 <!-- ヘッダーナビリンク -->
 <nav class="header-nav">
     <ul class="header-links">

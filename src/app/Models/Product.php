@@ -20,6 +20,10 @@ class Product extends Model
         'user_id',
     ];
 
+    // 検索用のスコープを定義
+    
+
+
     // Category.php(categoriesテーブル)とのリレーション
     public function category()
     {
