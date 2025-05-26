@@ -21,3 +21,8 @@
 - 商品詳細8:http://localhost/item/:8
 - 商品詳細9:http://localhost/item/:9
 - 商品詳細10:http://localhost/item/:10
+
+
+# ER図
+
+![ER図](./images/er.png)
