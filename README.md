@@ -25,4 +25,4 @@
 
 # ER図
 
-![ER図](flea-market.coachtech/er.png)
+![ER図](./er.png)
