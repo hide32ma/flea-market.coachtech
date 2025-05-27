@@ -25,4 +25,4 @@
 
 ## ER図
 
-![ER図](images/er.png)
+![ER図](./images/er.png)
