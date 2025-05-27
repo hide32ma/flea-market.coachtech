@@ -23,6 +23,6 @@
 - 商品詳細10:http://localhost/item/:10
 
 
-# ER図
+## ER図
 
 ![ER図](./images/er.png)
